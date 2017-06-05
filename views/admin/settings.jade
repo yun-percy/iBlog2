@@ -128,6 +128,14 @@ block content
                                                             input.js-switch(type='checkbox', checked=settings.ShowComments === 'true')
                                                     li.list-group-item.clearfix
                                                         .pull-left
+                                                            | #{__("admin.settings.message")} (
+                                                            a(href='http://changyan.kuaizhan.com', target='_blank') #{__("admin.settings.comments_service")}
+                                                                | )
+                                                        .pull-right
+                                                            input#ShowGuestbook(type='hidden', name='ShowGuestbook', value=settings.ShowGuestbook)
+                                                            input.js-switch(type='checkbox', checked=settings.ShowGuestbook === 'true')
+                                                    li.list-group-item.clearfix
+                                                        .pull-left
                                                             | #{__("admin.settings.comments_id")}
                                                         .pull-right
                                                             input#ChangyanId.form-control(type='text', name='ChangyanId', placeholder='#{__("admin.settings.comments_id_placeholder")}', value=settings.ChangyanId)
@@ -136,19 +144,6 @@ block content
                                                             | #{__("admin.settings.comments_conf")}
                                                         .pull-right
                                                             input#ChangyanConf.form-control(type='text', name='ChangyanConf', placeholder='#{__("admin.settings.comments_conf_placeholder")}', value=settings.ChangyanConf)
-                                                    li.list-group-item.clearfix
-                                                        .pull-left
-                                                            | #{__("admin.settings.message")} (
-                                                            a(href='http://www.uyan.cc/', target='_blank') #{__("admin.settings.message_service")}
-                                                            | )
-                                                        .pull-right
-                                                            input#ShowGuestbook(type='hidden', name='ShowGuestbook', value=settings.ShowGuestbook)
-                                                            input.js-switch(type='checkbox', checked=settings.ShowGuestbook === 'true')
-                                                    li.list-group-item.clearfix
-                                                        .pull-left
-                                                            | #{__("admin.settings.message_id")}
-                                                        .pull-right
-                                                            input#YouyanId.form-control(type='text', name='YouyanId', placeholder='#{__("admin.settings.message_id_placeholder")}', value=settings.YouyanId)
 
                                 .row
                                     .col-lg-12
