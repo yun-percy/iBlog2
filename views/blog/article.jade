@@ -9,6 +9,9 @@ block content
                 article.col-sm-12.col-xs-12.detail-wrap.post-content.animated.fadeIn(class='#{settings.ExpandMenu === "true" ? "col-md-9" : "col-md-12"}')
                     button.btn.btn-white.btn-menu(title='#{__("blog.article.table_of_content")}')
                         i.fa.fa-align-justify
+                    .font-controller.hidden-sm.hidden-xs
+                        .btn-font.btn-font-minus(title="缩小字体") A-
+                        .btn-font.btn-font-plus(title="增大字体") A+
                     .hidden-sm.hidden-xs
                         .text-muted.pull-left
                             span(title='#{__("blog.article.category")}')
